@@ -19,7 +19,7 @@ const validateJWT = ( req, res= response , next ) => {
         console.log(uid, name);
 
         req.uid  = uid;
-        req.name = name;
+        req.name = name; 
 
     } catch (error) {
         return res.status(401).json({
